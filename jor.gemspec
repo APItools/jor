@@ -19,11 +19,11 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = JOR::VERSION
 
-  gem.add_dependency 'hiredis',       	'0.4.5'
-  gem.add_dependency 'redis',         	'3.0.3'
-  gem.add_dependency 'rake'
-  gem.add_dependency 'rack',		'1.5.2'	
-  gem.add_dependency 'rack-test'
-  gem.add_dependency 'thin'
+  gem.add_dependency 'hiredis'
+  gem.add_dependency 'redis', '~>3.0'
+  gem.add_dependency 'rack',		'~>1.5'
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rack-test'
+  gem.add_development_dependency 'thin'
 end
 
